@@ -7,7 +7,7 @@ Reference: MATLAB, MATLAB help
 This contains test cases for functions in Signal Processing Toolbox, Scilab. 
 The functions tested are:eqtflength, is2rc and seqperiod. Test results are summarised below.
 
-(1) eqtflength
+(A) eqtflength
 
 TEST 1-Testing for correct number of input
 
@@ -108,7 +108,7 @@ larger matrices but no provision to handle N<0 or M<0.
 
 
 ******************************************************************************************************************************************************************************************************************************************************
-(2) seqperiod
+(B) seqperiod
 
 TEST 1-Testing for correct number of input
 
@@ -214,7 +214,7 @@ Output: p=ones(1,1000), num=2*ones(1,1000)
 Result-->PASS
 
 ****************************************************************************************************************************************************************************************************************************************************
-(3) is2rc
+(C) is2rc
 
 TEST 1-Testing for correct number of input
 
