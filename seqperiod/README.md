@@ -1,7 +1,7 @@
 Author-Nagma Khan
-
+<br>
 TEST 1-Testing for correct number of input
-
+<br>
 (1)Checking with no input
 Result--> Error message correct but number incorrect (should be 77 but is 1000)
 
