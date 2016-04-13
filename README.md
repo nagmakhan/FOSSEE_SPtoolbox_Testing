@@ -2,6 +2,8 @@
 
 Author-Nagma Khan
 
+Reference: MATLAB, MATLAB help
+
 This contains test cases for functions in Signal Processing Toolbox, Scilab. 
 The functions tested are:eqtflength, is2rc and seqperiod. Test results are summarised below.
 
