@@ -75,15 +75,26 @@ Result-->FAIL-No error displayed
 a1=[1 0 2 0 0];
 b1=[1 0 1 1 1];
 
+Output: b=[1 0 1.1],a=[1 0 2 0],N=3, M=1; error-number-10000; error-message- assert_checkalmostequal: Assertion failed: expected = [1 ...] while computed = [1 ...]
+
 FAIL-can't deal with input vectors which have zeros in between, should have done nothing, 
 but it removes one entry from end giving wrong output.
 
 (7)Infinity as input
 
+a1=%inf
+b1=%inf;
+
+Output: b=%inf, a=%inf, M=0, N=0
 
 Result-->PASS
 
 (8)Using 4D vector as input
+
+a1=ones(2,2,2,2);
+b1=zeros(2,2,2,2);
+
+Output: a=ones(1,16), b=zeros(1,16), N=-1, M=15;error-number-10000;error-message-assert_checkalmostequal: Assertion failed: expected = 0 while computed = -1
 
 Result-->FAIL:b, a and M correct but gives N as -1, can handle 4D or 
 larger matrices but no provision to handle N<0 or M<0.
