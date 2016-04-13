@@ -15,7 +15,7 @@ Result--> Error message correct but number incorrect (should be 77 but is 58). B
 
 (3)Checking with complex input
 
-Result--> PASS-Error message correct but error number incorrect(should be 82 but is 1000).
+Result--> PASS-Error message correct but error number incorrect(should be 82 but is 10000).
 
 (4)Checking with two outputs
 
