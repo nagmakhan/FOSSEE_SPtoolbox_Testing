@@ -10,11 +10,11 @@ Result--> Error message correct but number incorrect (should be 77 but is 1000)
 
 (2)Checking with 2 inputs
 
-Result--> Error message correct but number incorrect (should be 77 but is 58). But this case not explicitly handled in code.
+Result--> FAIL-No error message displayed. This case not explicitly handled in code.
 
 (3)More than 4 output arguments
 
-Result--> FAIL- Can't handle exception,no error message
+Result--> FAIL-No error message displayed. This case not explicitly handled in code.
 
 **************************************************************************************************************************
 TEST 2-Testing with various inputs for correct outputs
