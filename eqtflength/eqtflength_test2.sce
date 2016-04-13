@@ -41,6 +41,8 @@ catch
     disp(error_msg);
 end
 
+//Output: b=[1 2 1 1],a=[1 3 2 0], N=3, M=2
+
 //**Result-->PASS
 
 //*****************************************************************************
@@ -76,6 +78,8 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output: b=[1 2 1 1], a=[1 3 2 0],N=3,M=2.
 
 //**Result-->PASS
 
@@ -114,6 +118,10 @@ catch
     disp(error_msg);
 end
 
+//Output: b=[0.1 2],a=[0 0 1],N=2, M=1
+//error-number-10000
+//error-message- assert_checkalmostequal: Assertion failed: expected = [1 ...] while computed = [1 ...]
+
 //**Result-->FAIL-Gives wrong output,Can't deal with leading zeroes
 
 //*****************************************************************************
@@ -151,6 +159,10 @@ catch
     disp(error_msg);
 end
 
+//Output: a=[1.2.1.1], b=[0 0 0 0], N=-1, M=3
+//error-number-10000
+//error-message-assert_checkalmostequal: Assertion failed: expected = 0 while computed = -1  
+
 //**Result-->FAIL-gives M as -1, when it should be 0, can't handle this case
 //*****************************************************************************
 
@@ -171,6 +183,8 @@ catch
 end
 
 //Should give error that denominator can't be zero
+
+//Output: b=1, a=0, N=0, M=-1, No error
 
 //**Result-->FAIL-No error displayed
 
@@ -209,7 +223,11 @@ catch
     disp(error_msg);
 end
 
-//**Result-->FAIL-can't deal with input vectors which have zeros in between, 
+//Output: b=[1 0 1.1],a=[1 0 2 0],N=3, M=1
+//error-number-10000
+//error-message- assert_checkalmostequal: Assertion failed: expected = [1 ...] while computed = [1 ...]
+
+//**Result-->FAIL-can't deal with input vectors which have zeros in between,
 //should have done nothing, but it removes one entry from end giving wrong output
 //*****************************************************************************
 
@@ -245,6 +263,8 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output: b=%inf, a=%inf, M=0, N=0
 
 //**Result-->PASS
 //*****************************************************************************
@@ -282,6 +302,10 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output: a=ones(1,16), b=zeros(1,16), N=-1, M=15
+//error-number-10000
+//error-message-assert_checkalmostequal: Assertion failed: expected = 0 while computed = -1  
 
 //**Result-->FAIL:b, a and M correct but gives N as -1, can handle 4D or larger matrices
 //but no provision to handle N<0 or M<0.

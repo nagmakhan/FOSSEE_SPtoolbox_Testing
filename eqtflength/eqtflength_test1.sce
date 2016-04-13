@@ -10,7 +10,7 @@ exec('eqtflength.sci',-1);
 //*****************************************************************************
 
 //**(1)Checking with no input
-//eqtflength();
+
 try
     eqtflength();
 catch
@@ -23,10 +23,12 @@ catch
     disp(error_msg)
 end
 
-//**Result->PASS: Error message correct but number incorrect (should be 77 but is 1000)
+//Output:error number: 10000, error message: Incorrect number of input arguments.
+
+//**Result->PASS: Error message correct but number incorrect (should be 77 but is 10000)
 //*****************************************************************************
 //**(2)Checking with more 3 inputs
-//eqtflength();
+
 try
     eqtflength([1 2 3],[1 2 2 5], 5);
 catch
@@ -39,8 +41,10 @@ catch
     disp(error_msg)
 end
 
+//Output:error number: 10000, error message: Wrong number of input arguments.
+ 
 //**Result->Error message correct but number incorrect (should be 77 but is 58)
-//But this case not explicityly handled in code
+//But this case is not explicitly handled in code
 //*****************************************************************************
 //**(3)More than 4 output arguments
 try
@@ -54,5 +58,8 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output:No output, just a warning: 'recursion problem..., cleared.'
+// Had to be aborted.
 
 //**Result--> FAIL- Can't handle exception,no error message
