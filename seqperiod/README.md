@@ -6,7 +6,7 @@ TEST 1-Testing for correct number of input
 
 (1)Checking with no input
 
-Result--> Error message correct but number incorrect (should be 77 but is 1000)
+Result--> Error message correct but number incorrect (should be 77 but is 10000)
 
 (2)Checking with 2 inputs
 
