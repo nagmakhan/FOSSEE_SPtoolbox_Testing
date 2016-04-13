@@ -22,7 +22,9 @@ catch
     disp(error_msg);
 end
 
-//**Result--> FAIL-No input case not handled with explicit error message.
+//Output:error number: 4, error message: Undefined variable: isin  
+
+//**Result--> FAIL-Case not handled with explicit error message.
 //******************************************************************************
 //**(2)Checking with 2 inputs
 try
@@ -37,8 +39,10 @@ catch
     disp(error_msg);
 end
 
+//Output:error number: 58, error message: Wrong number of input arguments
+
 //**Result--> Error message correct but number incorrect (should be 77 but is 58)
-//But this case not explicityly handled in code
+//But this case not explicitly handled in code
 //******************************************************************************
 //**(3)Checking with complex input
 try
@@ -52,8 +56,9 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+//Output:error number: 10000, error message: Input inverse sine coefficients are not real
 
-//**Result--> PASS-Error message correct but error number incorrect(should be 82 but is 1000)
+//**Result--> PASS-Error message correct but error number incorrect(should be 82 but is 10000)
 //******************************************************************************
 
 //**(4)Checking with two outputs
@@ -68,6 +73,9 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output:No output, just a warning: 'recursion problem..., cleared'
+// Had to be aborted.
 
 //**Result--> FAIL-Exception not handled.
 //******************************************************************************

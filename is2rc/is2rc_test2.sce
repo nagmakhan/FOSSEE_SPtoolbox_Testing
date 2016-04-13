@@ -24,12 +24,12 @@ catch
     disp(error_msg);
 end
 
-
+//Output: k_exp=hypermat([2 2 2],[1 1 1 1 1 1 1 1])
 
 //**Result-->PASS
 //*****************************************************************************
 
-//**(2)vector of sine inverse values
+//**(2)Vector of sine inverse values
 A=asin([0.5 0.833 -0.4]);
 try
     k=is2rc(A);
@@ -44,6 +44,8 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output: k=[0.7328267 0.9997039 0.6023239]
 
 //**Result-->PASS
 //*****************************************************************************
@@ -64,6 +66,8 @@ catch
     disp(error_msg);
 end
 
+//Output: k= [0.9753680 0.9753680 0.8996722]
+
 //**Result-->PASS
 //*****************************************************************************
 
@@ -82,6 +86,8 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output: k=-0.0000011 
 
 //**Result-->PASS
 //****************************************************************************
@@ -102,6 +108,8 @@ catch
     disp(error_msg);
 end
 
+//Output: k=%nan
+
 //**Result-->PASS
 //****************************************************************************
 
@@ -121,10 +129,12 @@ catch
     disp(error_msg);
 end
 
+//Output: k=1.571D-10
+
 //**Result-->PASS
 //****************************************************************************
 
-//**(6)Giving zero as input
+//**(7)Giving zero as input
 A=0;
 try
     k=is2rc(A);
@@ -139,6 +149,8 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output: k=0
 
 //**Result-->PASS
 //****************************************************************************
