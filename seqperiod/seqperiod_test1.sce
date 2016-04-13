@@ -22,7 +22,9 @@ catch
     disp(error_msg);
 end
 
-//**Result--> Error message correct but number incorrect (should be 77 but is 1000)
+//Output:error number: 10000, error message: Incorrect number of input arguments.
+
+//**Result--> Error message correct but number incorrect (should be 77 but is 10000)
 //******************************************************************************
 
 //**(2)Checking with 2 inputs
@@ -38,8 +40,9 @@ catch
     disp(error_msg);
 end
 
-//**Result--> Error message correct but number incorrect (should be 77 but is 58)
-//But this case not explicityly handled in code
+//Output: No error
+
+//**Result--> FAIL-No error message displayed.But this case not explicitly handled in code
 //******************************************************************************
 
 //**(3)More than 4 output arguments
@@ -55,4 +58,5 @@ catch
     disp(error_msg);
 end
 
+//Output: No error displayed
 //**Result--> FAIL- Can't handle exception,no error message

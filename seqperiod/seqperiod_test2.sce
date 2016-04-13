@@ -27,7 +27,7 @@ catch
     disp(error_msg);
 end
 
-
+//Output: p=[1 2 3], num=[3 1.5 1]
 
 //**Result-->PASS
 //*****************************************************************************
@@ -50,8 +50,7 @@ catch
     disp(error_msg);
 end
 
-
-
+//Output: p=1, num=2
 
 //**Result-->PASS
 //*****************************************************************************
@@ -75,6 +74,9 @@ catch
     disp(error_msg);
 end
 
+//Output: error number:10000, 
+    //  error message: %hm_matrix: Input and output matrices  must have the same number of elements  
+
 //**Result-->FAIL
 //*****************************************************************************
 
@@ -97,7 +99,10 @@ catch
     disp(error_msg);
 end
 
-//**Result-->FAIL-Can't deal if more than 2D with first dimension as 1
+//Output: error number-10000, 
+    //  error message- %hm_matrix: Input and output matrices  must have the same number of elements  
+
+//**Result-->FAIL-Can't deal if more than 3D or more dimension matrices with first dimension as 1
 //*****************************************************************************
 
 //**(5)Zero as an input
@@ -117,6 +122,9 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output:error number- 18
+    //  error message- run: Too many variables
 
 //**Result-->FAIL-An exception occurs
 //*****************************************************************************
@@ -139,6 +147,9 @@ catch
     disp(error_msg);
 end
 
+//Output:error number- 18
+    //  error message- run: Too many variables
+    
 //**Result-->FAIL-An exception occurs, can't deal with 1D cases
 //*****************************************************************************
 
@@ -159,6 +170,9 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output:error number- 18
+    //  error message- run: Too many variables
 
 //**Result-->FAIL-An exception occurs.
 //*****************************************************************************
@@ -181,6 +195,8 @@ catch
     disp(error_msg);
 end
 
+//Output: p=[1 1 1], num=[2 2 2]
+
 //**Result-->PASS
 //*****************************************************************************
 
@@ -202,6 +218,8 @@ catch
     disp(error_msg);
 end
 
+//Output: p=1, num=1000
+
 //**Result-->PASS
 //*****************************************************************************
 
@@ -222,6 +240,8 @@ catch
     disp("error message - ");
     disp(error_msg);
 end
+
+//Output: p=ones(1,1000), num=2*ones(1,1000)
 
 //**Result-->PASS
 //*****************************************************************************
