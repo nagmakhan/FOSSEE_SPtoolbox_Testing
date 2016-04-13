@@ -2,8 +2,8 @@
 
 Author-Nagma Khan
 
-This contains test cases for functions in Signal Processing Toolbox, Scilab. The functions tested are:
-(1)eqtflength (2) is2rc (3)seqperiod. Test results are summarised below.
+This contains test cases for functions in Signal Processing Toolbox, Scilab. 
+The functions tested are:eqtflength, is2rc and seqperiod. Test results are summarised below.
 
 (1) eqtflength
 
