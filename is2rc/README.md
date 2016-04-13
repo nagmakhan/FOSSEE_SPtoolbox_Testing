@@ -1,5 +1,8 @@
 Author-Nagma Khan
 
+Reference: MATLAB, MATLAB help
+
+
 TEST 1-Testing for correct number of input
 
 (1)Checking with no input
@@ -47,6 +50,4 @@ Result-->PASS
 
 (7)Giving zero as input
 
-Result-->PASS
-
-Reference: MATLAB, MATLAB help.
+Result-->PASS.
